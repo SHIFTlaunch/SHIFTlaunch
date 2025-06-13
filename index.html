@@ -3,156 +3,82 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>SHIFT | AI for  Businesses</title>
+      <title>SHIFT | AI That Works for You</title>
       <script src="https://cdn.tailwindcss.com"></script>
-      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
-      <!-- Tailwind Plugins (optional for interactivity) -->
-      <script defer src="https://unpkg.com/alpinejs" crossorigin="anonymous"></script>
       <style>
-         /* Bold Custom Brand Colors */
-         .bg-electric-vermillion { background-color: #FF4E42; }
-         .hover-bg-electric-vermillion:hover { background-color: #E04339; }
-         .text-electric-vermillion { color: #FF4E42; }
-         .bg-bright-blue-bolt { background-color: #3A86FF; }
-         .text-bright-blue-bolt { color: #3A86FF; }
-         .border-bright-blue-bolt { border-color: #3A86FF; }
-         .bg-golden-flame { background-color: #FFBE0B; }
-         .bg-fresh-mint-green { background-color: #06D6A0; }
-         .bg-off-warm-sand { background-color: #FFF8F0; }
-         .bg-punchy-blush-tint { background-color: #FFEAEA; }
-         .text-midnight-graphite { color: #2A2A2A; }
-         .text-rich-charcoal-gray { color: #444444; }
-         .text-cool-gray-mist { color: #8E8E8E; }
+         :root {
+         --deep-plum: #3D1E6D;
+         --electric-coral: #FF6B6B;
+         --soft-lemon: #FFF176;
+         --mint-mist: #90E0EF;
+         --shadow-graphite: #1C1C1E;
+         }
+         .bg-deep-plum { background-color: var(--deep-plum); }
+         .bg-electric-coral { background-color: var(--electric-coral); }
+         .bg-soft-lemon { background-color: var(--soft-lemon); }
+         .bg-mint-mist { background-color: var(--mint-mist); }
+         .text-shadow-graphite { color: var(--shadow-graphite); }
+         .hover-bg-electric-coral:hover { background-color: #e55b5b; }
       </style>
    </head>
-   <body class="font-sans text-gray-800 bg-off-warm-sand min-h-screen leading-relaxed scroll-smooth">
-      <!-- Navigation -->
-      <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-md px-6 py-4">
-         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold text-midnight-graphite">SHIFT</h1>
-            <ul class="hidden md:flex gap-6 text-sm font-medium">
-               <li><a href="#hero" class="text-rich-charcoal-gray hover:text-electric-vermillion">Home</a></li>
-               <li><a href="#how-it-works" class="text-rich-charcoal-gray hover:text-electric-vermillion">How It Works</a></li>
-               <li><a href="#about" class="text-rich-charcoal-gray hover:text-electric-vermillion">About</a></li>
-               <li><a href="#testimonials" class="text-rich-charcoal-gray hover:text-electric-vermillion">Testimonials</a></li>
-            </ul>
+   <body class="text-white bg-deep-plum font-sans scroll-smooth">
+      <!-- Navbar -->
+      <nav class="fixed top-0 w-full bg-deep-plum/80 backdrop-blur-md z-50 shadow-md">
+         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-white">SHIFT</div>
+            <div class="hidden md:flex space-x-6 text-sm">
+               <a href="#hero" class="hover:text-soft-lemon">Home</a>
+               <a href="#problem" class="hover:text-soft-lemon">Before SHIFT</a>
+               <a href="#about" class="hover:text-soft-lemon">About</a>
+               <a href="#contact" class="hover:text-soft-lemon">Contact</a>
+            </div>
          </div>
       </nav>
-      <!-- Hero Section -->
-      <section id="hero" class="pt-36 pb-24 px-6 md:px-12 flex flex-col items-center text-center">
-         <p class="text-sm uppercase tracking-wider text-cool-gray-mist mb-4 animate-fade-in">Created by students, built for real business owners.</p>
-         <h1 class="text-4xl md:text-5xl font-bold max-w-3xl mx-auto mb-6 text-midnight-graphite leading-tight animate-fade-in">
-            AI shouldn’t feel like another job.
-         </h1>
-         <p class="text-lg text-rich-charcoal-gray max-w-xl mx-auto mb-8 animate-fade-in">
-            SHIFT helps small business owners save time, stay organized, and grow faster — using honest, easy-to-use AI tools made just for you.
+      <!-- Hero -->
+      <section id="hero" class="pt-32 pb-20 px-6 md:px-12 text-center">
+         <h1 class="text-4xl md:text-5xl font-bold max-w-3xl mx-auto leading-tight">AI that works quietly behind the scenes.</h1>
+         <p class="text-lg mt-6 max-w-xl mx-auto text-mint-mist">
+            SHIFT helps small businesses save hours weekly without adding more complexity. You won’t even notice it — until you do.
          </p>
-         <div class="flex flex-wrap justify-center gap-4 animate-fade-in">
-            <a href="https://calendly.com/shiftai/30min" target="_blank"
-               class="bg-electric-vermillion hover-bg-electric-vermillion text-white py-3 px-6 rounded-md transition duration-300 ease-in-out">
-            Book a Free Call
-            </a>
-            <a href="#quick-form"
-               class="border-2 border-bright-blue-bolt text-bright-blue-bolt hover:bg-bright-blue-bolt hover:text-white py-3 px-6 rounded-md transition duration-300 ease-in-out">
-            Quick Questions Form
-            </a>
+         <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="https://calendly.com/shiftai/30min" target="_blank" class="bg-electric-coral hover-bg-electric-coral text-white py-3 px-6 rounded-md font-semibold transition">Book a Free Call</a>
+            <a href="#contact" class="border-2 border-soft-lemon text-soft-lemon hover:bg-soft-lemon hover:text-deep-plum py-3 px-6 rounded-md font-semibold transition">Quick Form</a>
          </div>
-         <div class="mt-12 w-full max-w-4xl">
-            <img src="https://placehold.co/900x400/FF4E42/white?text=Business+Owner+on+Path" alt="AI Path Illustration"
-               class="rounded mx-auto shadow-md transition duration-300 hover:scale-105" />
+         <div class="mt-14 max-w-5xl mx-auto">
+            <img src="A_2D_digital_illustration_website_landing_page_for.png" alt="AI helping small business owner behind the scenes" class="rounded-lg shadow-lg mx-auto"/>
          </div>
       </section>
-      <!-- Pain Point Section -->
-      <section id="pain-point" class="py-20 px-6 md:px-12 bg-punchy-blush-tint">
-         <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <!-- Problem -->
+      <section id="problem" class="bg-mint-mist text-deep-plum py-20 px-6 md:px-12">
+         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
-               <h2 class="text-3xl font-bold mb-4 text-midnight-graphite">The real problem? You’re doing everything yourself.</h2>
-               <p class="text-rich-charcoal-gray mb-4">
-                  You’re great at your work — but every day you’re juggling schedules, leads, messages, documents, and a million little to-dos.
-               </p>
-               <p class="text-rich-charcoal-gray">
-                  SHIFT plugs AI into those problems to free you up.
-               </p>
+               <h2 class="text-3xl font-bold mb-4">Before SHIFT: You’re doing everything yourself</h2>
+               <p class="text-shadow-graphite mb-4">Spreadsheets, customer messages, to-do lists, emails, deadlines — it never ends. You're not lazy. You're overloaded.</p>
+               <p class="text-shadow-graphite">SHIFT automates the repetitive stuff so you can focus on what you love.</p>
             </div>
             <div>
-               <img src="https://placehold.co/600x400/3A86FF/white?text=Overwhelmed+Owner" alt="Overwhelmed Business Owner"
-                  class="rounded mx-auto shadow-sm hover:shadow-lg transition duration-300" />
+               <img src="https://placehold.co/600x400/1C1C1E/FFF176?text=Overwhelmed+Shop+Owner" alt="Frustrated Owner" class="rounded-lg shadow-md hover:scale-105 transition"/>
             </div>
          </div>
       </section>
-      <!-- How It Works -->
-      <section id="how-it-works" class="py-20 px-6 md:px-12 bg-white">
-         <h2 class="text-3xl font-bold text-center mb-12 text-midnight-graphite">Simple AI help, built around your business</h2>
-         <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-            <!-- Card 1 -->
-            <div class="bg-punchy-blush-tint p-6 rounded-lg border hover:shadow-md transition duration-300">
-               <div class="w-12 h-12 bg-bright-blue-bolt rounded-full flex items-center justify-center text-white mb-4 mx-auto">
-                  📅
-               </div>
-               <h3 class="text-xl font-semibold text-center text-midnight-graphite">Organize Your Operations</h3>
-               <p class="text-center text-rich-charcoal-gray">Automate scheduling, reminders, paperwork.</p>
-            </div>
-            <!-- Card 2 -->
-            <div class="bg-punchy-blush-tint p-6 rounded-lg border hover:shadow-md transition duration-300">
-               <div class="w-12 h-12 bg-electric-vermillion rounded-full flex items-center justify-center text-white mb-4 mx-auto">
-                  🤖
-               </div>
-               <h3 class="text-xl font-semibold text-center text-midnight-graphite">Never Miss a Lead</h3>
-               <p class="text-center text-rich-charcoal-gray">AI follow-ups, quick replies, smart lead tracking.</p>
-            </div>
-            <!-- Card 3 -->
-            <div class="bg-punchy-blush-tint p-6 rounded-lg border hover:shadow-md transition duration-300">
-               <div class="w-12 h-12 bg-fresh-mint-green rounded-full flex items-center justify-center text-white mb-4 mx-auto">
-                  💼
-               </div>
-               <h3 class="text-xl font-semibold text-center text-midnight-graphite">Work Less, Earn More</h3>
-               <p class="text-center text-rich-charcoal-gray">Focus on work that matters. SHIFT handles the rest.</p>
-            </div>
+      <!-- About -->
+      <section id="about" class="bg-electric-coral text-white py-20 px-6 md:px-12">
+         <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">We’re students solving real business problems</h2>
+            <p class="text-md max-w-2xl mx-auto">SHIFT was born after seeing small businesses overwhelmed and underserved by flashy "AI gurus." We built this to be honest, practical, and useful — no fluff, just help.</p>
          </div>
       </section>
-      <!-- About Section -->
-      <section id="about" class="py-20 px-6 md:px-12 bg-punchy-blush-tint">
-         <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div>
-               <h2 class="text-3xl font-bold mb-4 text-midnight-graphite">Why we built SHIFT</h2>
-               <p class="text-rich-charcoal-gray mb-4">We’re not selling you a license. We’re a student team who saw businesses left behind — confused by AI, priced out, burnt out.</p>
-               <p class="text-rich-charcoal-gray">SHIFT started as a summer idea and became a mission: helping our communities run smarter.</p>
-            </div>
-            <div>
-               <img src="https://placehold.co/600x400/FF4E42/white?text=Student+and+Owner" alt="Students Helping Owner"
-                  class="rounded shadow-md mx-auto hover:scale-105 transition duration-300" />
-            </div>
-         </div>
-      </section>
-      <!-- Contact Form -->
-      <section id="quick-form" class="py-20 px-6 md:px-12 bg-white">
+      <!-- Contact -->
+      <section id="contact" class="bg-soft-lemon text-deep-plum py-20 px-6 md:px-12">
          <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4 text-midnight-graphite">Can’t book a call?</h2>
-            <p class="text-rich-charcoal-gray mb-8">Fill out this quick form and we’ll reach out soon.</p>
-            <iframe
-               src="https://docs.google.com/forms/d/e/1FAIpQLSfHjVJqTtGdXeCzUZbQEDH7zgUWGUDNaYKg6/viewform?embedded=true"
-               width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0"
-               class="rounded shadow-md"
-               title="Quick Contact Form"
-               >Loading…</iframe>
-         </div>
-      </section>
-      <!-- Testimonials -->
-      <section id="testimonials" class="py-20 px-6 md:px-12 bg-white">
-         <h2 class="text-3xl font-bold text-center mb-12 text-midnight-graphite">What business owners are saying</h2>
-         <div class="max-w-4xl mx-auto space-y-8">
-            <div class="bg-punchy-blush-tint p-8 rounded-lg border flex flex-col md:flex-row items-start gap-6 hover:shadow-md transition duration-300">
-               <div class="w-16 h-16 rounded-full bg-bright-blue-bolt flex items-center justify-center text-white font-bold">J</div>
-               <div>
-                  <p class="italic text-rich-charcoal-gray">“I had no idea AI could help my plumbing business. SHIFT made it easy — and it’s already saving me hours.”</p>
-                  <p class="mt-4 font-semibold text-midnight-graphite">— John M., Contractor</p>
-               </div>
-            </div>
+            <h2 class="text-3xl font-bold mb-4">Want to learn more?</h2>
+            <p class="mb-8">Fill out this quick form and we’ll reach out with ideas — no spam, no pressure.</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHjVJqTtGdXeCzUZbQEDH7zgUWGUDNaYKg6/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0" class="rounded-md shadow-md">Loading…</iframe>
          </div>
       </section>
       <!-- Footer -->
-      <footer class="py-10 px-6 text-center text-cool-gray-mist text-sm bg-off-warm-sand">
-         <p>&copy; 2025 SHIFT. All rights reserved.</p>
+      <footer class="bg-deep-plum text-center text-sm py-6 text-mint-mist">
+         &copy; 2025 SHIFT. Made by students for business owners.
       </footer>
    </body>
 </html>
